@@ -19,7 +19,7 @@ header {
     padding-left: 20px;
     box-shadow: 10px 10px 8px 10px #bebebe;
     border-bottom: #D90429 solid 3px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .nav-brand {
@@ -50,6 +50,10 @@ header {
     width: 100%;
 }
 
+.navbar-toggler {
+    background-color: #EDF2F4;
+}
+
 .nav-brand:not(:hover)::after {
     right: 0;
     left: auto;
@@ -72,6 +76,92 @@ header {
     background-color: #EDF2F4;
 }
 
-main {
+.row {
     margin: 0px 70px;
+}
+
+.row > div {
+    height: 450px;
+}
+
+.catalog {
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 15px 0px #EF233C inset; */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: #4B7F52;
+    padding: 0.55em 0.55em;
+    color: #EDF2F4;
+    border-radius: 0.4em;
+    box-shadow: 0px 0px 10px 0 #4B7F52;
+    font-weight: bold;
+}
+
+.image {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 10px 0 #0F110C;
+}
+
+.img-1 {
+    position: absolute;
+    left: 120px;
+    top: 20px;
+}
+
+.img-2 {
+    position: absolute;
+    left: 290px;
+    top: 120px;
+}
+
+.img-3 {
+    position: absolute;
+    left: 120px;
+    top: 190px;
+}
+
+.img-4 {
+    position: absolute;
+    left: 290px;
+    top: 290px;
+}
+
+.server-info {
+    background-color: #0F110C;
+    color: #EDF2F4;
+    padding: 0px 70px 30px 70px;
+}
+
+.image-5 {
+    position: absolute;
+    border-radius: 20px;
+    left: 460px;
+    top: 20px;
+    height: 420px;
+    box-shadow: 0px 0px 5px 0 #0F110C;
+}
+
+.about {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em 3.5em;
 }
