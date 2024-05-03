@@ -142,6 +142,9 @@ header {
     background-color: #0F110C;
     color: #EDF2F4;
     padding: 0px 70px 30px 70px;
+    margin-bottom: 50px;
+    border-top: #D90429 solid 3px;
+    border-bottom: #D90429 solid 3px;
 }
 
 .image-5 {
@@ -160,8 +163,51 @@ header {
     margin-bottom: 0.5em;
 }
 
-.grid-display {
+.grid-display-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1em 3.5em;
+}
+
+.title {
+    font-size: 3rem;
+    color: #4B7F52;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secondary-text {
+    text-align: center;
+    font-size: 1.3em;
+
+}
+
+.grid-display-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1em 2em;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.grid-item-2 {
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.pricing h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pricing li {
+    font-size: 1.2rem;
+}
+
+.pricing ul {
+    margin-bottom: 40px;
 }

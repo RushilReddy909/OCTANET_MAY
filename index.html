@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -18,27 +19,27 @@
                 </button>
                 <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                        <li class="nav-item mb-md-2 mb-lg-0"><a href="#" class="link">Home</a></li>
-                        <li class="nav-item mb-md-2 mb-lg-0"><a href="#" class="link">Pricing</a></li>
+                        <li class="nav-item mb-md-2 mb-lg-0"><a href="#home" class="link">Home</a></li>
+                        <li class="nav-item mb-md-2 mb-lg-0"><a href="#pricing" class="link">Pricing</a></li>
                         <li class="nav-item mb-md-2 mb-lg-0"><a href="#" class="link">Contact Us</a></li>
                     </ul> 
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main id="home">
         <div class="row">
-            <div class="col-12 col-lg-6 info">
+            <div class="col-12 col-lg-6 info mb-md-3 mb-lg-0">
                 <div>
                     <p style="font-size: 2em;">Welcome to GGaming</p>
                     <h1 class="mb-4" style="color: #4B7F52;">Enjoy <b>Unlimited</b> Cloud Gaming Experience</h1>
                     <p style="font-size: 1.2em;">Get started now to enjoy games from comfort of your home. All you need is a fast internet connection!</p>
                 </div>
                 <div>
-                    <a href="#" class="button">View Plans</a>
+                    <a href="#pricing" class="button">View Plans</a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 catalog">
+            <div class="col-12 col-lg-6 catalog mb-md-3 mb-lg-0">
                 <img class="image img-1" src="./images/GOW.webp">
                 <img class="image img-2" src="/images/spiderman.avif">
                 <img class="image img-3" src="/images/CP2077.jpg">
@@ -50,16 +51,91 @@
         <br>
         <div class="server-info">
             <h1 class="about">About Us</h1>
-            <div class="grid-display">
-                <div class="hold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="hold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                <div class="hold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="grid-display-1">
+                <div class="grid-item-1">
+                    <div class="text-center mb-3"><i class="fa-solid fa-bolt fa-4x"></i></div>
+                    <div>
+                        <p style="font-size: 1.3rem;">We provide the fastest server-to-client connection speeds with minimal disruptions and low latency to ensure maximum immersion and a great time.</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <div class="text-center mb-3"><i class="fa-solid fa-gamepad fa-4x"></i></div>
+                    <div>
+                        <p style="font-size: 1.3rem;">Enjoy our 1000+ catalogue of games updated weekly with the latest releases. We offer everything from Action, Adventure, FPS, RPGs and more!</p>
+                    </div>
+                </div>
+                <div class="grid-item-1">
+                    <div class="text-center mb-3"><i class="fa-solid fa-microchip fa-4x"></i></div>
+                    <div>
+                        <p style="font-size: 1.3rem;">Our desktops can handle even the most gruesome and graphically demanding games. Play latest AAA titles in 4K in our RTX 4000 or RX 7000 series rigs.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="pricing">
-            <h1 style="font-size: larger;">Pricing</h1>
+        <div class="pricing" id="pricing">
+            <h1 class="title">Pricing</h1>
+            <p class="secondary-text">We currently offer 3 tiers of plans</p>
+            <div class="grid-display-2">
+                <div class="grid-item-2">
+                    <div>
+                        <h1 style="color: #CD7F32;">Bronze</h1>
+                        <ul>
+                            <li>90 mins of playtime</li>
+                            <li>Games streamed at 1080p/60FPS</li>
+                            <li>Access to selection of game titles - 500+</li>
+                            <li>Latest games take 2 weeks to be available</li>
+                            <li>Limited to 1 user</li>
+                            <li>Access to older GPUs</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="padding: 0 10px;">Lowest monthly subscription fee, ideal for casual gamers or those on a budget.</p>
+                        <a class="button" href="#pricing">INR 150</a>
+                    </div>
+                </div>
+                <div class="grid-item-2">
+                    <div>
+                        <h1 style="color: #C0C0C0;">Silver</h1>
+                        <ul>
+                            <li>180 mins of playtime</li>
+                            <li>Games streamed at 4K/60FPS</li>
+                            <li>Access to wider selection of game titles - 800+</li>
+                            <li>Latest games take 5 days to be available</li>
+                            <li>Limited to 3 users</li>
+                            <li>Cloud Saving, Cross-Platform Play</li>
+                            <li>Access to last-gen GPUs</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="padding: 0 10px;">Reasonably priced subscription with a balance of affordability and features, suitable for most gamers.</p>
+                        <a class="button" href="#pricing">INR 450</a>
+                    </div>
+                </div>
+                <div class="grid-item-2">
+                    <div>
+                        <h1 style="color: #FFD700;">Gold</h1>
+                        <ul>
+                            <li>300 mins of playtime</li>
+                            <li>Games streamed at 4K/120FPS</li>
+                            <li>Access to all game titles in our catalogue</li>
+                            <li>Latest games are immediately available</li>
+                            <li>Limited to 7 users</li>
+                            <li>Additional Console Support including Silver</li>
+                            <li>Access to latest-gen GPUs</li>
+                            <li>Priority Support</li>
+                            <li>Advanced Features like AI enchancements and VR support</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="padding: 0 10px;">Highest subscription fee, reflecting the premium quality and extensive features offered, suitable for serious gamers and enthusiasts.</p>
+                        <a class="button" href="#pricing">INR 1000</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <br>
+        <br>
     </main>
     <footer>
         
