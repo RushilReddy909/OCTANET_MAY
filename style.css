@@ -8,16 +8,16 @@
 */
 
 body {
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     background-color: #EDF2F4;
+    overflow-x: hidden;
 }
 
 header {
     font-size: 1.5em;
     background-color: #0F110C;
     padding-left: 20px;
-    box-shadow: 10px 10px 8px 10px #bebebe;
+    box-shadow: 0 0 8px 10px rgba(15, 17, 13, 0.4);
     border-bottom: #D90429 solid 3px;
     margin-bottom: 150px;
 }
@@ -76,11 +76,11 @@ header {
     background-color: #EDF2F4;
 }
 
-.row {
-    margin: 0px 70px;
+main .row {
+    margin: 0px clamp(20px, 10%, 70px);
 }
 
-.row > div {
+main .row > div {
     height: 450px;
 }
 
@@ -141,10 +141,10 @@ header {
 .server-info {
     background-color: #0F110C;
     color: #EDF2F4;
-    padding: 0px 70px 30px 70px;
     margin-bottom: 50px;
     border-top: #D90429 solid 3px;
     border-bottom: #D90429 solid 3px;
+    padding: 0px clamp(20px, 10%, 70px) 30px clamp(20px, 10%, 70px);
 }
 
 .image-5 {
@@ -210,4 +210,43 @@ header {
 
 .pricing ul {
     margin-bottom: 40px;
+}
+
+footer div {
+    background-color: #0F110C;
+    padding: 0 70px;
+}
+
+footer .row {
+    padding: 0;
+}
+
+footer h1 {
+    color: #EDF2F4;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0.8em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer p, ol > li {
+    color: #EDF2F4;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.img-holder {
+    display: flex;
+    justify-content: center;
+}
+
+#icon {
+    min-width: 150px;
+    max-width: 300px;
+    height: auto;
 }
