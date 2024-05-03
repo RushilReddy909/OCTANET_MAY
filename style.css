@@ -1,0 +1,77 @@
+/*
+    Color Palette
+    1. #4B7F52 - Fern Green
+    2. #0F110C - Night
+    3. #EDF2F4 - White
+    4. #EF233C - Light Red
+    5. #D90429 - Fire Engine Red
+*/
+
+body {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #EDF2F4;
+}
+
+header {
+    font-size: 1.5em;
+    background-color: #0F110C;
+    padding-left: 20px;
+    box-shadow: 10px 10px 8px 10px #bebebe;
+    border-bottom: #D90429 solid 3px;
+    margin-bottom: 50px;
+}
+
+.nav-brand {
+    font-size: 2em;
+    color: #EDF2F4;
+    transition: all 0.3s;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-brand::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background: #EF233C;
+    transition: all 0.3s;
+}
+
+.nav-brand:hover {
+    color: #EF233C;
+}
+
+.nav-brand:hover::after {
+    width: 100%;
+}
+
+.nav-brand:not(:hover)::after {
+    right: 0;
+    left: auto;
+}
+
+.nav-item {
+    padding: 0px 12px;
+}
+
+.link {
+    color: #EDF2F4;
+    border-radius: 40px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover {
+    color: #0F110C;
+    background-color: #EDF2F4;
+}
+
+main {
+    margin: 0px 70px;
+}
