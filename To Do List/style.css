@@ -1,0 +1,114 @@
+:root {
+    --black: #080705;
+    --light-blue: #92d5e6;
+    --yellow: #edae49;
+    --salmon-pink: #ff9fb2;
+    --mimi-pink: #fbdce2;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #A0DDE6;
+
+}
+
+.container {
+    margin: 120px auto 0 auto;
+    max-width: 40vw;
+    background-color: #FFFCF2;
+    border-radius: 25px;
+    color: #252422;
+    padding: 20px 20px;
+    box-shadow: 0 0 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    height: 50px;
+    background-color: #cececf;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0;
+}
+
+input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+#btnTask {
+    height: 100%;
+    border: none;
+    background-color: #EB5E28;
+    border-radius: 15px;
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    color: #EDF2F4;
+}
+
+button:active {
+    filter: brightness(90%);
+}
+
+ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+li {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    /* transition: all 0.1s; */
+}
+
+li:hover {
+    background-color: #e9e9e9;
+}
+
+li > p {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+li > button {
+    border: none;
+    outline: none;
+    font-size: 1.75rem;
+    padding: 0.2em 0.5em;
+    color: transparent;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+li > button:hover {
+    background-color: #bebebe;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-trash {
+    color: red;
+}
