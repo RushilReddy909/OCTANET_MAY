@@ -149,7 +149,7 @@ main .row > div {
         grid-template-rows: auto;
     }
 
-    .img-1, .img-2, .img-3, .img-4, .image-5 {
+    .img-1, .img-2, .img-3, .img-4, .img-5 {
         grid-area: auto;
         width: 100%;
     }
