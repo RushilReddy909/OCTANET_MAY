@@ -13,11 +13,35 @@
         <h1>To Do List</h1>
         <div class="flexbox">
             <input type="text" placeholder="Enter Task" required id="taskInput" autofocus autocomplete="off">
-            <button type="button" id="btnTask" onclick="addTask()">Add Task</button>
+            <input type="date" placeholder="Date" required id="dueDate">
+            <select name="priority" id="priorityList">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="button" id="btnTask" onclick="addTask()">Add</button>
+        </div>
+        <div id="sortBtns" class="buttons">
+            <button id="all" onclick="sortList('all')">Show All</button>
+            <button id="complete" onclick="sortList('complete')">Complete</button>
+            <button id="incomplete" onclick="sortList('incomplete')">Incomplete</button>
+            <button id="priority" onclick="sortList('priority')">Priority</button>
+            <button id="clear" onclick="sortList('clear')">Clear All</button>
         </div>
         <div id="tasks">
             <ul id="task_list">
-                
+                <li>    
+                    <div class="color"></div>
+                    <div class="task_info">
+                        <p>Task 1</p>
+                        <p class="secondary">Due Date: 25-06-23</p>
+                        <p class="secondary">Priority:1</p>
+                    </div>
+                    <button onclick="completeTask(this)"><i class="fa-solid fa-check"></i></button>
+                    <button onclick="delTask(this)"><i class="fa-solid fa-trash"></i></button>
+                </li>
             </ul>
         </div>
     </div>
