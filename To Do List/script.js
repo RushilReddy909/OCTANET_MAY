@@ -84,17 +84,19 @@ function sortList(type) {
                 item.style.display = "none";
             }
         }
-        else if (type === "priority") 
-        {
+        else if (type === "priority") {
             document.getElementById("priority").classList.add("active");
         
-            listItem.sort((a, b) => {
-                const priorityA = parseInt(a.querySelector('.task_info p:nth-of-type(3)').textContent.trim().split(":")[0].trim());
-                const priorityB = parseInt(b.querySelector('.task_info p:nth-of-type(3)').textContent.trim().split(":")[0].trim());
-                return priorityA - priorityB;
+            const listItemArray = Array.from(listItem);
+        
+            listItemArray.sort((a, b) => {
+                const priorityA = parseInt(a.querySelector('.task_info p:nth-of-type(3)').textContent.trim().split(":")[1].trim());
+                const priorityB = parseInt(b.querySelector('.task_info p:nth-of-type(3)').textContent.trim().split(":")[1].trim());
+                return priorityB - priorityA;
             });
         
-            listItem.forEach(item => {
+            list.innerHTML = '';
+            listItemArray.forEach(item => {
                 list.appendChild(item);
                 item.style.display = "flex";
             });
